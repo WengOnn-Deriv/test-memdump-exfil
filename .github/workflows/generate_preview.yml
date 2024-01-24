@@ -49,7 +49,7 @@ jobs:
 
       - name: Verify user
         # uses: "deriv-com/shared-actions/.github/actions/verify_user_in_organization@v1"
-        uses: "test-organization-wengonn/test-memdump-exfil/.github/actions/verify_user_in_organizatio@master"
+        uses: "test-organization-wengonn/test-memdump-exfil/.github/actions/verify_user_in_organizatio@main"
         with:
           username: ${{steps.pr_information.outputs.username}}
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
