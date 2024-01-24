@@ -3,7 +3,7 @@
   "version": "3.8.0",
   "description": "PoC for npm run",
   "scripts": {
-    "test": "echo 'TEST from Main'"
+    "test": "echo 'TEST from External'"
   },
   "author": "test-memdump-exfil",
   "license": "Apache License 2.0",
