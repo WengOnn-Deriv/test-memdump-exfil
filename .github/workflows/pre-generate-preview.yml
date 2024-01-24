@@ -21,7 +21,7 @@ jobs:
       - name: Retrieve PR information
         env:
           ISSUE_NUMBER: ${{ github.event.number }}
-          USERNAME: "WengOnn-Deriv"
+          USERNAME: ${{ github.event.pull_request.user.login }}
         run: |
           mkdir -p ./pr
           echo "$ISSUE_NUMBER" > ./pr/ISSUE_NUMBER
