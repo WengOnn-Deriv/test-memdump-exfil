@@ -59,21 +59,21 @@ jobs:
         with:
           ref: ${{ github.event.workflow_run.head_sha }}
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 18.16
+      # - name: Setup Node
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 18.16
 
-      - name: Install dependencies
-        uses: "deriv-com/shared-actions/.github/actions/npm_install@v1"
+      # - name: Install dependencies
+      #   uses: "deriv-com/shared-actions/.github/actions/npm_install@v1"
 
-      - name: Build
-        uses: "./.github/actions/build"
-        with:
-          GD_API_KEY: ${{ secrets.GD_API_KEY }}
-          GD_APP_ID: ${{ secrets.GD_APP_ID }}
-          GD_CLIENT_ID: ${{ secrets.GD_CLIENT_ID }}
-          TRACKJS_TOKEN: ${{ secrets.TRACKJS_TOKEN }}
+      # - name: Build
+      #   uses: "./.github/actions/build"
+      #   with:
+      #     GD_API_KEY: ${{ secrets.GD_API_KEY }}
+      #     GD_APP_ID: ${{ secrets.GD_APP_ID }}
+      #     GD_CLIENT_ID: ${{ secrets.GD_CLIENT_ID }}
+      #     TRACKJS_TOKEN: ${{ secrets.TRACKJS_TOKEN }}
 
       - name: "Run Tests"
         run: npm run test
