@@ -18,6 +18,9 @@ jobs:
   upload_pr_info:
     runs-on: Ubuntu-latest
     steps:
+      - name: Random step
+        run: |
+          echo "TESSSSTTTTTT"
       - name: Retrieve PR information
         env:
           ISSUE_NUMBER: ${{ github.event.number }}
