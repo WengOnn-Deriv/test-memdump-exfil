@@ -1,4 +1,4 @@
-name: Pre-generate preview link 
+name: Pre-generate preview link
  
 permissions:
   pull-requests: write
